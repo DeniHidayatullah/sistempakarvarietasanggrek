@@ -15,7 +15,7 @@
                       <div class="x_panel">
                           <div class="x_title">
                               <h2><?= $tabel; ?></h2>
-                              <div class="clearfix"></div>
+                              <div class="clearfWx"></div>
                           </div>
                           <div class="x_content">
                               <div class="row mt-3">
@@ -41,7 +41,7 @@
                                       <tr>
                                           <td style="text-align: center"><?= $i; ?></td>
                                           <td style="text-align: center"><?= $krk['kode_karakteristik']; ?></td>
-                                          <td><?= $krk['nama_karakteristik']; ?></td>
+                                          <td style="text-align: center"><?= $krk['nama_karakteristik']; ?></td>
                                           <td style="text-align: center;">
                                               <a href="<?= base_url('karakteristik/hapus/') . $krk['id_karakteristik']; ?>"
                                                   class="btn btn-danger btn-sm"

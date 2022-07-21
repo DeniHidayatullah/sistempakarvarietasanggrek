@@ -17,9 +17,11 @@ class Karakteristik extends CI_Controller
     $data['judul'] = 'Halaman Karakteristik';
     $data['tabel'] = 'Data Karakteristik';
 
-    $data['user'] = $this->session->userdata('username');
-    // $data['karakteristik'] = $this->MG->getAllKarakteristik();
-    // $data['kode'] = $this->MG->KodeKarakteristik();
+    $data['user'] = $this->db->get_where('tbl_user', [
+      'username' => $this->session->userdata('username')
+    ])->row_array();
+    $data['karakteristik'] = $this->MG->getAllKarakteristik();
+    $data['kode'] = $this->MG->KodeKarakteristik();
 
     $this->load->view('templates/Admin_header', $data);
     $this->load->view('templates/Admin_sidebar', $data);

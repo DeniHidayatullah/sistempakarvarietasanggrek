@@ -4,13 +4,13 @@ class Varietas_model extends CI_model
 {
   public function KodeVarietas()
   {
-    // Membuat kode karakteristik menjadi generate AI (Auto Increment)
+    // Membuat kode varietas menjadi generate AI (Auto Increment)
     $query = $this->db->query("select max(kode_varietas) as max_id from tbl_varietas");
     $rows = $query->row();
     $kode = $rows->max_id;
     $noUrut = (int) substr($kode, 1, 2);
     $noUrut++;
-    $char = "K";
+    $char = "V";
     $kode = $char . sprintf("%02s", $noUrut);
     return $kode;
   }
@@ -40,8 +40,8 @@ class Varietas_model extends CI_model
     $id = $this->input->post('id');
     // Mengubah data karakteristik
     $data = [
-      "kode_varietas" => $this->input->post('kode_varietas', true),
-      "nama_varietas" => $this->input->post('nama_varietas', true),
+      "kode_varietas" => $this->input->post('kode'),
+      "nama_varietas" => $this->input->post('nama', true),
       "cara_perawatan" => $this->input->post('cara_perawatan', true)
     ];
     $this->db->where('id_varietas', $id);

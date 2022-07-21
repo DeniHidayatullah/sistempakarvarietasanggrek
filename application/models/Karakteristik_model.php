@@ -25,7 +25,6 @@ class Karakteristik_model extends CI_model
   public function tambahKarakteristik()
   {
     $data = [
-      'id_karakteristik' => $this->input->post('id'),
       'kode_karakteristik' => $this->KodeKarakteristik(),
       "nama_karakteristik" => $this->input->post('nama', true)
     ];

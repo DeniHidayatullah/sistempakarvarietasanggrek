@@ -3,7 +3,7 @@
         <div class="col-md-3 left_col">
             <div class="left_col scroll-view">
                 <div class="navbar nav_title" style="border: 0;">
-                    <a href="<?= base_url('admin'); ?>" class="site_title"><i class="fa fa-desktop"></i> <span>Sistem
+                    <a href="<?= base_url('Admin'); ?>" class="site_title"><i class="fa fa-desktop"></i> <span>Sistem
                             Pakar</span></a>
                 </div>
 
