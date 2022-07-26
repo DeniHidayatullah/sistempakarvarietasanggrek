@@ -38,6 +38,12 @@
 						</a>
 					</li>
 					<li>
+						<a class="page-scroll" href="<?= base_url('Home/identify') ?>">
+							<i class="fa fa-info-circle"></i>
+							Identify
+						</a>
+					</li>
+					<li>
 						<a href="<?= base_url('auth'); ?>">
 							<i class="fa fa-sign-in"></i>
 							Login
