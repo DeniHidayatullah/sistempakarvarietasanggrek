@@ -1,9 +1,9 @@
 <footer class="footer">
-  <div class="container">
-    <div class="copyright">
-      &copy; 2021 Sistem Pakar Diagnosa Kerusakan Komputer By Framework id
+    <div class="container">
+        <div class="copyright">
+            &copy; 2022 Sistem Pakar Ensiklopedi Varietas Anggrek
+        </div>
     </div>
-  </div>
 </footer>
 </div>
 
