@@ -28,15 +28,18 @@
                 <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
                     <div class="menu_section">
                         <ul class="nav side-menu">
-                            <li><a href="<?= base_url('admin'); ?>"><i class="fa fa-fw fa-home"></i> Dashboard</a></li>
-                            <li><a href="<?= base_url('karakteristik'); ?>"><i class="fa fa-fw fa-edit"></i>
+                            <li><a href="<?= base_url('Admin'); ?>"><i class="fa fa-fw fa-home"></i> Dashboard</a></li>
+                            <li><a href="<?= base_url('Karakteristik'); ?>"><i class="fa fa-fw fa-edit"></i>
                                     Karakteristik</a></li>
-                            <li><a href="<?= base_url('varietas'); ?>"><i class="fa fa-fw fa-desktop"></i>Varietas</a>
+                            <li><a href="<?= base_url('Varietas'); ?>"><i class="fa fa-fw fa-desktop"></i>Varietas</a>
                             </li>
-                            <li><a href="<?= base_url('pengetahuan'); ?>"><i class="fa fa-fw fa-table"></i> Basis
+                            <li><a href="<?= base_url('DataLatih'); ?>"><i class="fa fa-fw fa-table"></i>Data
+                                    Latih</a>
+                            </li>
+                            <!-- <li><a href="<?= base_url('Pengetahuan'); ?>"><i class="fa fa-fw fa-table"></i> Basis
                                     Pengetahuan</a></li>
-                            <li><a href="<?= base_url('laporan'); ?>"><i class="fa fa-fw fa-bar-chart-o"></i>
-                                    Laporan</a></li>
+                            <li><a href="<?= base_url('Laporan'); ?>"><i class="fa fa-fw fa-bar-chart-o"></i>
+                                    Laporan</a></li> -->
                             <li onclick="return confirm('Yakin Keluar?');"><a href="<?= base_url('auth/logout'); ?>"><i
                                         class="fa fa-fw fa-sign-out" aria-hidden="true"></i> Logout </a></li>
                         </ul>

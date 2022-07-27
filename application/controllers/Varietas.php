@@ -62,10 +62,7 @@ class Varietas extends CI_Controller
   {
     $data['user'] = $this->db->get_where('tbl_user', [
       'username' => $this->session->userdata('username')
-    ])->row_array();
-
-   
-      
+    ])->row_array();      
       $this->varietas->ubahVarietas();
       $this->session->set_flashdata('pesan', '<div class="alert alert-info" role="alert">Data Varietas Berhasil diubah!</div>'); //buat pesan akun berhasil dibuat
       redirect('varietas');
